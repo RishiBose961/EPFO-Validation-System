@@ -5,6 +5,7 @@ import ResultsDashboard from './components/ResultsDashboard';
 import type { FileValidationResult } from './types/epfo';
 import { parseExcelFile } from './utils/excelParser';
 import { validateAllRecords } from './utils/epfoValidator';
+import InstallButton from './InstallButton';
 
 function App() {
   const [validationResults, setValidationResults] = useState<FileValidationResult[]>([]);
@@ -67,6 +68,7 @@ function App() {
                 EPFO Validation System
               </h1>
             </div>
+            <InstallButton/>
           </div>
         </div>
       </header>
