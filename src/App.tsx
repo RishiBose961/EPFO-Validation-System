@@ -59,16 +59,13 @@ function App() {
       <header className="bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-blue-600 rounded-lg">
-              <FileSpreadsheet className="h-8 w-8 text-white" />
+            <div className="p-2 bg-red-600 rounded-lg">
+              <FileSpreadsheet className="h-8 w-8 animate-pulse text-white" />
             </div>
             <div>
               <h1 className="text-3xl font-bold text-gray-900">
                 EPFO Validation System
               </h1>
-              <p className="text-sm text-gray-600 mt-1">
-                Validate Excel files for EPFO compliance and detect errors
-              </p>
             </div>
           </div>
         </div>
@@ -184,9 +181,9 @@ function App() {
       </main>
 
       <footer className="bg-white border-t border-gray-200 mt-12">
-        <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 py-2 sm:px-6 lg:px-8">
           <p className="text-center text-gray-600 text-sm">
-            EPFO Validation System - Ensuring compliance with EPFO regulations
+            &copy; {new Date().getFullYear()} EPFO Validation System - Developed by {'Rishi Bose'}
           </p>
         </div>
       </footer>
