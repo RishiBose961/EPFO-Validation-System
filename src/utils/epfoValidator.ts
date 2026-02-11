@@ -148,15 +148,15 @@ export function validateEPFORecord(record: EPFORecord): ValidationResult {
     });
   }
 
-  if (!record.memberName || record.memberName.toString().trim() === '') {
-    errors.push({
-      rowNumber: record.rowNumber,
-      columnName: 'Member Name',
-      errorMessage: 'Member Name is required and cannot be empty',
-      errorType: 'MISSING_REQUIRED_FIELD',
-      value: record.memberName,
-    });
-  }
+  // if (!record.memberName || record.memberName.toString().trim() === '') {
+  //   errors.push({
+  //     rowNumber: record.rowNumber,
+  //     columnName: 'Member Name',
+  //     errorMessage: 'Member Name is required and cannot be empty',
+  //     errorType: 'MISSING_REQUIRED_FIELD',
+  //     value: record.memberName,
+  //   });
+  // }
 
   return {
     record,
